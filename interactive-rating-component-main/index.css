@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    padding: 10px;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    box-sizing: border-box;
+    display: flex;
+    margin: 150px 300px 150px 300px;
+}
+
+.rating_component{
+    width: 1440px;
+    margin: 0px 290px 0px 250px;
+    border: 30px;
+    max-width: 100%;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.rating_component div {
+    margin: 0px;
+}
+
+img{
+    margin-left: 18px;
+    background-color: hsl(216, 12%, 24%);
+    border-radius: 46%;
+    align-items: center;
+}
+
+h1{
+    margin:0 10px 0 10px;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+p{
+    margin:0 10px 0 10px;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.rating_buttons{
+    margin:0 10px 0 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.rating_buttons button{
+    background-color: hsl(216, 12%, 24%);
+    font-family: 'Overpass', sans-serif;
+    color:hsl(217, 15%, 77%);
+    border-radius: 46%;
+    width: 36px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit_button {
+    margin:0 10px 0 10px;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+    color:hsl(0, 0%, 100%) ;
+    border-radius: 65px;
+    background-color: hsl(25, 97%, 53%);
+    width: 93%;
+}
+.submit_button:hover{
+    color:hsl(25, 97%, 53%) ;
+    background-color:hsl(0, 0%, 100%);
+}
+
+.rating_buttons button:hover{
+    color:hsl(25, 97%, 53%) ;
+    background-color:hsl(0, 0%, 100%);
+}
+
+.rating_buttons button:focus{
+    color:hsl(0, 0%, 100%) ;
+    background-color:hsl(217, 12%, 63%);
+}
+.rating_component a{
+    text-decoration: none;
+}
+.rating_button.active {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+}
+@media screen and (max-width:375px) {
+    *{
+        align-content: center;
+        align-items: center;
+    }
+    body {
+        align-items: center;
+        flex-direction: column;
+        margin: 90px 30px 90px 50px;
+    }
+    .rating_component{
+        margin: 0px 250px 0px 230px;
+        align-items: center;
+        width: 375px;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 130px 300px 150px 300px;
+}
+.thankYou_response{
+    width: 1440px;
+    margin: 0px 290px 0px 290px;
+    border: 30px;
+    max-width: 35%;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+}
+.thankYou_response img{
+    display: flex;
+    align-items: center;
+    margin: 10px 70px 30px 70px;
+}
+.thankYou{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.appreciation{
+    text-align: center;
+    color: white;
+}
+.rating{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: hsl(213, 19%, 23%);
+    color:  hsl(25, 97%, 53%);
+    border-radius: 25px;
+}
+@media screen and (max-width:375px) {
+    *{
+        align-content: center;
+        align-items: center;
+    }
+    body {
+        align-items: center;
+        flex-direction: column;
+        margin: 90px 30px 90px 50px;
+    }
+    .thankYou_response{
+        margin: 0px 250px 0px 230px;
+        align-items: center;
+        width: 375px;
+        max-width: 100%;
+    }
+}
